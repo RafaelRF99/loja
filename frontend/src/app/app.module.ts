@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { RedDirective } from './directives/red.directive';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -41,6 +42,7 @@ import { ProductCreateComponent } from './components/product/product-create/prod
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
