@@ -12,8 +12,10 @@ import { MatListModule } from '@angular/material/list';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 import { RedDirective } from './directives/red.directive';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -46,6 +48,9 @@ import { ProductCreateComponent } from './components/product/product-create/prod
     MatButtonModule,
     MatSnackBarModule,
     HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

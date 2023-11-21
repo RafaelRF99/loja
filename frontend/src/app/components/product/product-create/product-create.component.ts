@@ -20,10 +20,14 @@ export class ProductCreateComponent implements OnInit {
   ngOnInit(): void {}
 
   createProduct(): void {
-    this.productService.create(this.product).subscribe(() => {
-      this.productService.showMessege('Produto criado!');
-      this.router.navigate(['/products']);
-    });
+    if (this.product.price !== null) {
+      this.productService.create(this.product).subscribe(() => {
+        this.productService.showMessege('Produto criado!');
+        this.router.navigate(['/products']);
+      });
+    } else {
+      this.productService.showMessege('Preço inválido!');
+    }
   }
   cancel(): void {
     this.router.navigate(['/products']);
